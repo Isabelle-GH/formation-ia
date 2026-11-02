@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17324d">
+<title>Formation — Piloter un projet de développement avec l’IA</title>
+<style>
+:root{--ink:#172536;--muted:#607080;--brand:#17324d;--accent:#26735f;--bg:#f4f7fa;--card:#fff;--line:#dce4eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.58 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:var(--brand);color:white;padding:42px 20px 34px}header .wrap,main{max-width:1000px;margin:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:700;opacity:.8}
+h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.12;margin:.55rem 0 1rem}
+header p{max-width:720px;margin:0;color:#e3edf5}
+main{padding:24px 18px 60px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:-5px}
+.stat,.card,.day{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.stat strong{display:block;font-size:1.55rem;color:var(--brand)}.stat span{color:var(--muted);font-size:.9rem}
+section{margin-top:26px}h2{font-size:1.45rem;margin:0 0 12px}h3{font-size:1.08rem;margin:0 0 7px}
+p{margin:.45rem 0}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.day{display:flex;gap:14px;align-items:flex-start}.num{flex:0 0 38px;height:38px;border-radius:10px;background:#e8f1ef;color:var(--accent);display:grid;place-items:center;font-weight:800}
+.tag{display:inline-block;border-radius:99px;padding:3px 9px;background:#edf2f6;color:#405467;font-size:.78rem;margin-top:6px}
+ul{padding-left:1.2rem;margin:.5rem 0}.card{margin-top:12px}
+table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-size:.88rem}
+.exercise label{display:block;font-weight:650;margin:16px 0 5px}.exercise textarea{width:100%;min-height:82px;padding:11px;border:1px solid #bdcbd7;border-radius:9px;font:inherit;background:white;color:var(--ink)}
+.exercise select{width:100%;padding:10px;border:1px solid #bdcbd7;border-radius:9px;background:white;font:inherit}
+button{border:0;border-radius:9px;background:var(--accent);color:white;font:inherit;font-weight:700;padding:11px 16px;cursor:pointer;margin:12px 8px 0 0}
+button.secondary{background:#e8eef3;color:var(--brand)}.result{padding:12px;background:#edf5f1;border-radius:9px;margin-top:12px;display:none}
+.progress{height:10px;background:#e1e8ee;border-radius:20px;overflow:hidden;margin:10px 0}.progress>div{height:100%;width:0;background:var(--accent);transition:width .2s}
+.check{display:flex;gap:10px;align-items:center;margin:9px 0}.check input{width:18px;height:18px}
+details{border-top:1px solid var(--line);padding:13px 0}summary{font-weight:700;cursor:pointer}
+footer{max-width:1000px;margin:auto;padding:0 18px 35px;color:var(--muted);font-size:.9rem}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.stats{gap:7px}.stat{padding:12px}.stat strong{font-size:1.25rem}header{padding-top:30px}td,th{padding:8px 5px;font-size:.9rem}}
+@media print{body{background:white}header{background:white;color:#172536;padding:10px 0}header p{color:#172536}.stat,.card,.day{break-inside:avoid}button{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Parcours pratique · Niveau professionnel</div>
+<h1>Piloter un projet de développement avec l’IA</h1>
+<p>Une formation de 10 jours pour apprendre à cadrer, concevoir, piloter, contrôler et livrer une application web et e-commerce. Le fil rouge est un projet réel : l’inventaire d’une librairie relié à son site marchand.</p>
+</div></header>
+<main>
+<div class="stats">
+<div class="stat"><strong>10 jours</strong><span>Parcours complet</span></div>
+<div class="stat"><strong>2 h / jour</strong><span>Rythme quotidien</span></div>
+<div class="stat"><strong>20 heures</strong><span>Temps total estimé</span></div>
+</div>
+
+<section class="card">
+<h2>Objectif de la formation</h2>
+<p>Passer de « demander à l’IA de créer une application » à « piloter un projet de développement » : comprendre le besoin, formaliser les règles métier, choisir une solution adaptée, guider l’IA et vérifier la qualité du résultat.</p>
+<p><strong>Profil visé :</strong> non-technicien souhaitant acquérir les bons réflexes et le vocabulaire professionnel, sans devenir développeur en dix jours.</p>
+</section>
+
+<section>
+<h2>Les six approches retenues</h2>
+<div class="grid">
+<div class="card"><h3>1. Agile + Kanban</h3><p>Organiser le travail, prioriser et livrer progressivement.</p></div>
+<div class="card"><h3>2. Business Analysis</h3><p>Comprendre les besoins, exigences, utilisateurs et règles métier.</p></div>
+<div class="card"><h3>3. Spec-Driven Development</h3><p>Faire produire l’IA à partir de spécifications explicites et vérifiables.</p></div>
+<div class="card"><h3>4. Software Craftsmanship</h3><p>Favoriser simplicité, lisibilité, maintenabilité et qualité.</p></div>
+<div class="card"><h3>5. DevOps + SDLC</h3><p>Comprendre versions, environnements, livraison et maintenance.</p></div>
+<div class="card"><h3>6. Security by Design + QA</h3><p>Intégrer sécurité, tests et validation dès la conception.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Programme des 10 jours</h2>
+<p class="muted">Coche les journées terminées. La progression est conservée dans le navigateur de cet appareil.</p>
+<div class="progress"><div id="bar"></div></div><p id="progressText" class="muted">0 sur 10 jours terminés</p>
+<div class="grid" id="days">
+<div class="day"><div class="num">01</div><div><h3>Cycle de vie d’un projet informatique</h3><p>SDLC, périmètre, livrables, jalons, parties prenantes.</p><span class="tag">Livrable : cartographie du projet</span></div></div>
+<div class="day"><div class="num">02</div><div><h3>Cadrage et Business Analysis</h3><p>Découverte client, besoins, exigences, contraintes et risques.</p><span class="tag">Livrable : note de cadrage</span></div></div>
+<div class="day"><div class="num">03</div><div><h3>Agile, Scrum et Kanban</h3><p>MVP, backlog, User Stories, priorisation et critères d’acceptation.</p><span class="tag">Livrable : backlog fonctionnel</span></div></div>
+<div class="day"><div class="num">04</div><div><h3>UX/UI et conception fonctionnelle</h3><p>Parcours utilisateur, wireframes, maquettes et responsive design.</p><span class="tag">Livrable : parcours et maquettes</span></div></div>
+<div class="day"><div class="num">05</div><div><h3>Architecture applicative</h3><p>Front-end, back-end, API, base de données, monolithe et modularité.</p><span class="tag">Livrable : schéma d’architecture</span></div></div>
+<div class="day"><div class="num">06</div><div><h3>Spec-Driven Development et IA</h3><p>Spécifications, contexte, agents IA et validation humaine.</p><span class="tag">Livrable : dossier de spécifications</span></div></div>
+<div class="day"><div class="num">07</div><div><h3>Software Craftsmanship</h3><p>Clean Code, SOLID, DRY, KISS, refactoring et dette technique.</p><span class="tag">Livrable : grille d’audit qualité</span></div></div>
+<div class="day"><div class="num">08</div><div><h3>QA, tests et sécurité</h3><p>Tests unitaires, intégration, E2E, recette, OWASP et RGPD.</p><span class="tag">Livrable : plan de tests et recette</span></div></div>
+<div class="day"><div class="num">09</div><div><h3>DevOps et déploiement</h3><p>Git, commit, branches, CI/CD, staging, production et rollback.</p><span class="tag">Livrable : procédure de déploiement</span></div></div>
+<div class="day"><div class="num">10</div><div><h3>Livraison professionnelle</h3><p>Simulation de livraison, documentation, transfert et maintenance.</p><span class="tag">Livrable : dossier projet complet</span></div></div>
+</div>
+<div id="checks"></div>
+</section>
+
+<section class="card">
+<h2>Rythme pédagogique quotidien</h2>
+<table><thead><tr><th>Étape</th><th>Durée</th><th>Objectif</th></tr></thead><tbody>
+<tr><td>Comprendre</td><td>20 min</td><td>Définition, utilité et vocabulaire.</td></tr>
+<tr><td>Observer</td><td>15 min</td><td>Exemple professionnel appliqué à la librairie.</td></tr>
+<tr><td>Pratiquer</td><td>40–50 min</td><td>Exercice réalisé par l’apprenant.</td></tr>
+<tr><td>Corriger et valider</td><td>15–20 min</td><td>Retour, correction et consolidation.</td></tr>
+</tbody></table>
+<p><strong>Règle de validation :</strong> viser au moins 14/20 à chaque exercice. En dessous, refaire un exercice ciblé avant de poursuivre.</p>
+</section>
+
+<section class="card exercise">
+<h2>Jour 1 — Exercice pratique</h2>
+<p><strong>Mise en situation :</strong> un libraire souhaite un outil d’inventaire et de gestion des stocks, un site e-commerce et un suivi des commandes. Le site doit être relié à l’inventaire pour éviter de vendre des livres indisponibles.</p>
+<label for="q1">1. Quel est ton premier réflexe ?</label>
+<select id="q1"><option value="">Choisir une réponse</option><option>Demander à l’IA de créer l’application.</option><option>Choisir les technologies et l’hébergement.</option><option>Comprendre les besoins et le fonctionnement du client.</option><option>Dessiner les écrans.</option></select>
+<label for="q2">2. Cite au moins quatre parties prenantes.</label><textarea id="q2" placeholder="Ex. libraire, vendeurs…"></textarea>
+<label for="q3">3. Quelles sont les quatre grandes fonctionnalités du périmètre initial ?</label><textarea id="q3"></textarea>
+<label for="q4">4. Donne deux risques si l’IA développe sans analyse préalable.</label><textarea id="q4"></textarea>
+<label>5. Remets ces étapes dans l’ordre.</label>
+<div id="ordering">
+<label for="s1">Étape 1</label><select id="s1"><option value="">Choisir</option><option>Compréhension du besoin client</option><option>Conception de la solution</option><option>Développement de l’application</option><option>Tests et validation</option><option>Déploiement</option></select>
+<label for="s2">Étape 2</label><select id="s2"><option value="">Choisir</option><option>Compréhension du besoin client</option><option>Conception de la solution</option><option>Développement de l’application</option><option>Tests et validation</option><option>Déploiement</option></select>
+<label for="s3">Étape 3</label><select id="s3"><option value="">Choisir</option><option>Compréhension du besoin client</option><option>Conception de la solution</option><option>Développement de l’application</option><option>Tests et validation</option><option>Déploiement</option></select>
+<label for="s4">Étape 4</label><select id="s4"><option value="">Choisir</option><option>Compréhension du besoin client</option><option>Conception de la solution</option><option>Développement de l’application</option><option>Tests et validation</option><option>Déploiement</option></select>
+<label for="s5">Étape 5</label><select id="s5"><option value="">Choisir</option><option>Compréhension du besoin client</option><option>Conception de la solution</option><option>Développement de l’application</option><option>Tests et validation</option><option>Déploiement</option></select>
+</div>
+<button onclick="submitExercise()">Préparer mes réponses</button>
+<button class="secondary" onclick="window.print()">Imprimer / enregistrer en PDF</button>
+<div class="result" id="result"><strong>Réponses préparées.</strong><p>Copie le texte ci-dessous dans ta conversation ChatGPT pour recevoir une correction personnalisée.</p><textarea id="answers" style="min-height:230px"></textarea><button onclick="copyAnswers()">Copier les réponses</button></div>
+</section>
+
+<section class="card">
+<h2>Vocabulaire essentiel à retenir</h2>
+<details><summary>Projet, périmètre, livrable, jalon</summary><p><strong>Projet :</strong> travail temporaire organisé pour atteindre un objectif. <strong>Périmètre :</strong> ce qui est inclus ou exclu. <strong>Livrable :</strong> résultat concret attendu. <strong>Jalon :</strong> point de contrôle important dans le calendrier.</p></details>
+<details><summary>Partie prenante (stakeholder)</summary><p>Personne ou organisation qui influence le projet, participe à celui-ci ou est affectée par ses résultats.</p></details>
+<details><summary>SDLC</summary><p><em>Software Development Life Cycle</em> : cycle de vie du développement logiciel, de l'idée à la maintenance.</p></details>
+<details><summary>MVP</summary><p><em>Minimum Viable Product</em> : première version limitée aux fonctionnalités nécessaires pour apporter une valeur réelle et recueillir des retours.</p></details>
+</section>
+</main>
+<footer>Support pédagogique personnel — Formation pratique de 10 jours. Les exercices et livrables sont à construire et valider au fil des séances.</footer>
+<script>
+const key='formation-projet-ia-days-v1';
+function getDone(){try{return JSON.parse(localStorage.getItem(key)||'[]')}catch(e){return []}}
+function renderChecks(){const host=document.getElementById('checks'),done=getDone();host.innerHTML='';for(let i=1;i<=10;i++){const l=document.createElement('label');l.className='check';const c=document.createElement('input');c.type='checkbox';c.checked=done.includes(i);c.addEventListener('change',()=>{let d=getDone();d=c.checked?[...d,i]:d.filter(x=>x!==i);localStorage.setItem(key,JSON.stringify(d));updateProgress()});l.append(c,document.createTextNode('Jour '+i+' terminé'));host.append(l)}updateProgress()}
+function updateProgress(){const n=getDone().length;document.getElementById('bar').style.width=(n*10)+'%';document.getElementById('progressText').textContent=n+' sur 10 jours terminés'}
+function submitExercise(){const names=['Compréhension du besoin client','Conception de la solution','Développement de l’application','Tests et validation','Déploiement'];const vals=[1,2,3,4,5].map(i=>document.getElementById('s'+i).value);const text='Exercice Jour 1 — mes réponses\\n\\n1. Premier réflexe : '+document.getElementById('q1').value+'\\n\\n2. Parties prenantes : '+document.getElementById('q2').value+'\\n\\n3. Fonctionnalités : '+document.getElementById('q3').value+'\\n\\n4. Risques : '+document.getElementById('q4').value+'\\n\\n5. Ordre des étapes :\\n'+vals.map((v,i)=>(i+1)+'. '+(v||'Non renseigné')).join('\\n');document.getElementById('answers').value=text;document.getElementById('result').style.display='block'}
+function copyAnswers(){const a=document.getElementById('answers');a.select();document.execCommand('copy')}
+renderChecks();
+</script>
+</body></html>
